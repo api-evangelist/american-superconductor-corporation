@@ -1,8 +1,13 @@
 aid: american-superconductor-corporation
 name: American Superconductor Corporation
-description: 'American Superconductor Corporation is a company surfaced as a portfolio company of kleiner-perkins
-  and added to the API Evangelist network as a stub for enrichment. Sector: hardtech. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'American Superconductor Corporation (AMSC) is a Ayer, Massachusetts based power systems
+  company that designs and deploys grid interconnection, power protection, and power supply solutions
+  for the energy, renewables, industrial, utility, and military sectors. Its portfolio spans grid systems
+  such as D-VAR dynamic reactive compensation and STATCOM, ship protection and degaussing systems for
+  naval defense, wind turbine electrical control systems, and Amperium high-temperature superconductor
+  wire. AMSC was surfaced as a portfolio company of kleiner-perkins and added to the API Evangelist
+  network. This is a public-company / hardtech profile with no public developer API surface; the
+  enrichment pass captured domain-security posture and corporate link properties only.'
 url: https://raw.githubusercontent.com/api-evangelist/american-superconductor-corporation/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +15,32 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Hardtech
+- Energy
+- Renewables
+- Power Grid
+- Superconductors
+- Industrials
+- Utility
+- Military
+- Defense
+image: https://www.amsc.com/wp-content/uploads/2021/03/amsc-logo.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/american-superconductor-corporation-domain-security.yml
 - type: Website
   url: https://www.amsc.com
+- type: About
+  url: https://www.amsc.com/about-us/
+- type: Blog
+  url: https://www.amsc.com/about-us/news/
+- type: Support
+  url: https://www.amsc.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.amsc.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.amsc.com/tc
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
